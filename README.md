@@ -1,6 +1,6 @@
 # Terraform Provider for Phare
 
-The official [Terraform](https://www.terraform.io) provider for [Phare](https://phare.io), a platform monitoring solution.
+A [Terraform](https://www.terraform.io) provider for [Phare](https://phare.io), a platform monitoring solution.
 
 This provider is built on the [Terraform Plugin Framework](https://github.com/hashicorp/terraform-plugin-framework) and allows you to manage Phare resources including:
 
@@ -15,25 +15,6 @@ Documentation for the Phare API can be found at [https://docs.phare.io/api-refer
 
 - [Terraform](https://developer.hashicorp.com/terraform/downloads) >= 1.0
 - [Go](https://golang.org/doc/install) >= 1.24
-
-## Installation
-
-This provider will be available on the [Terraform Registry](https://registry.terraform.io/). To use it, add the following to your Terraform configuration:
-
-```hcl
-terraform {
-  required_providers {
-    phare = {
-      source = "phare/phare"
-      version = "~> 1.0"
-    }
-  }
-}
-
-provider "phare" {
-  api_token = var.phare_api_token # or set PHARE_API_TOKEN environment variable
-}
-```
 
 ## Building The Provider
 
